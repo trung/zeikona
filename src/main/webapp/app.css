@@ -1,3 +1,7 @@
 /* app css stylesheet */
 
+.header-placeholder {
+    height: 50px;
+}
+
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" ng-app="zeikona" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="zeikona" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="zeikona" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="zeikona" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Zeikona - Tools you need for photos</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css"/>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body class="ng-cloak" ng-app="zeikona">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -25,11 +23,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">ZEikona</a>
+                <a class="navbar-brand" href="#">Zeikona</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#/home">Home</a></li>
                     <li><a href="#/view1">View1</a></li>
                     <li><a href="#/view2">View2</a></li>
                 </ul>
@@ -41,9 +39,11 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  <div class="header-placeholder"></div>
+
   <div role="main">
-    <div class="container" ng-view></div>
-      <div>Angular seed app: v<span app-version></span></div>
+     <div class="container" ng-view></div>
+     <div class="container">Version: <span app-version></span></div>
   </div>
 
   <!-- In production use:
@@ -53,6 +53,7 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
   <script src="app.js"></script>
+  <script src="home/home.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
