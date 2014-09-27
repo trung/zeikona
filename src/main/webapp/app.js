@@ -4,11 +4,14 @@
 angular.module('zeikona', [
   'ngRoute',
   'ui.bootstrap',
+  'zeikona.services',
   'zeikona.home',
   'zeikona.view1',
   'zeikona.view2',
   'zeikona.version'
-])
+], function ($locationProvider) {
+    //$locationProvider.html5Mode(true);
+})
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
