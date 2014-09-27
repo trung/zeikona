@@ -9,7 +9,7 @@ angular.module('zeikona.home', ['ngRoute'])
   });
 }])
 
-.controller('ZHomeCtrl', [function($scope) {
+.controller('ZHomeCtrl', ['$scope', function($scope) {
 
     //$scope.userProfile = null;
     $scope.hasUserProfile = false;
