@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="zeikona" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="zeikona" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="zeikona" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="zeikona" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css"/>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script type='text/javascript'>
-        function startApp() {
-            angular.bootstrap(document, ['zeikona']);
-        }
-    </script>
+  <script type='text/javascript'>
+    function startApp() {
+        angular.bootstrap(document, ['zeikona']);
+    }
+  </script>
 </head>
 <body class="ng-cloak" ng-controller="ZHomeCtrl">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -36,7 +36,7 @@
                     <li><a href="#/view1">View1</a></li>
                     <li><a href="#/view2">View2</a></li>
                 </ul>
-                <span class="navbar-text navbar-right" id="signin" ng-show="immediateFailed">
+                <span class="navbar-btn navbar-right" style="margin-bottom: 0px" id="signin" ng-show="immediateFailed">
                   <span id="myGsignin"></span>
                 </span>
             </div><!--/.nav-collapse -->
@@ -61,22 +61,22 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
   <script src="app.js"></script>
+  <script src="main/services.js"></script>
   <script src="home/home.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
-  <script src="main/services.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
-    <script type="text/javascript">
-        window.___gcfg = {
-            parsetags: 'explicit'
-        };
-        (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/auth:plusone.js?onload=startApp';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-    </script>
+  <script type="text/javascript">
+    window.___gcfg = {
+        parsetags: 'explicit'
+    };
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/auth:plusone.js?onload=startApp';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
 </body>
 </html>

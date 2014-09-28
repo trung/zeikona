@@ -9,9 +9,9 @@ angular.module('zeikona.home', ['ngRoute'])
   });
 }])
 
-.controller('ZHomeCtrl', ['$scope', function($scope) {
+.controller('ZHomeCtrl', ['$scope', 'Conf', function($scope, Conf) {
 
-    //$scope.userProfile = null;
+    $scope.userProfile = undefined;
     $scope.hasUserProfile = false;
     $scope.isSignedIn = false;
     $scope.immediateFailed = false;
