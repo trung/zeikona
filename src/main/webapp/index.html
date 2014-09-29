@@ -6,17 +6,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Zeikona - Tools you need for photos</title>
+  <title>Zeikona - Awesome tool for photos</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css"/>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
-  <script type='text/javascript'>
-    function startApp() {
-        angular.bootstrap(document, ['zeikona']);
-    }
-  </script>
+  <script src="main/client.js"></script>
 </head>
 <body class="ng-cloak" ng-controller="ZHomeCtrl">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -39,6 +35,7 @@
                 <span class="navbar-btn navbar-right" style="margin-bottom: 0px" id="signin" ng-show="immediateFailed">
                   <span id="myGsignin"></span>
                 </span>
+                <p class="navbar-text navbar-right" ng-show="isSignedIn">{{userProfile.name}}</p>
             </div><!--/.nav-collapse -->
         </div>
     </div>
@@ -69,14 +66,22 @@
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
   <script type="text/javascript">
-    window.___gcfg = {
-        parsetags: 'explicit'
-    };
-    (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/auth:plusone.js?onload=startApp';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
+      function startApp() {
+          angular.bootstrap(document, ['zeikona']);
+      }
+      function init() {
+          zeikona.appengine.init('//' + window.location.host + '/_ah/api');
+
+          window.___gcfg = {
+              parsetags: 'explicit'
+          };
+          (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/auth:plusone.js?onload=startApp';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+      }
   </script>
+  <script src="https://apis.google.com/js/client.js?onload=init"></script>
 </body>
 </html>

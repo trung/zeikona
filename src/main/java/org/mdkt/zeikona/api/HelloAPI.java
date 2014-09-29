@@ -6,6 +6,8 @@ import com.google.api.server.spi.config.Named;
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
+import org.mdkt.zeikona.model.GPAuthResult;
+import org.mdkt.zeikona.model.ZUser;
 
 /**
  * Created by trung on 27/9/14.
@@ -18,8 +20,10 @@ import com.google.appengine.api.users.UserServiceFactory;
 )
 public class HelloAPI {
 
-    @ApiMethod
-    public String hello(@Named("name") String name, User user) {
-        return String.format("Hi, %s", user.getUserId());
+    @ApiMethod(name = "say")
+    public ZUser hello(GPAuthResult authResult) {
+        ZUser user = new ZUser();
+        user.setName(authResult.getAccess_token());
+        return user;
     }
 }

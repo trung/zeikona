@@ -9,9 +9,9 @@ angular.module('zeikona.home', ['ngRoute'])
   });
 }])
 
-.controller('ZHomeCtrl', ['$scope', 'Conf', function($scope, Conf) {
+.controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', function($scope, Conf, ZeikonaApi) {
 
-    $scope.userProfile = undefined;
+    $scope.userProfile = {'name':''};
     $scope.hasUserProfile = false;
     $scope.isSignedIn = false;
     $scope.immediateFailed = false;
@@ -22,6 +22,12 @@ angular.module('zeikona.home', ['ngRoute'])
         });
     }
 
+    $scope.signedIn = function (profile) {
+        $scope.isSignedIn = true;
+        $scope.userProfile = profile;
+        $scope.hasUserProfile = true;
+    };
+
     $scope.processAuth = function(authResult) {
         $scope.immediateFailed = true;
         if ($scope.isSignedIn) {
@@ -30,9 +36,10 @@ angular.module('zeikona.home', ['ngRoute'])
         if (authResult['access_token']) {
             $scope.immediateFailed = false;
             // Successfully authorized, create session
-            //PhotoHuntApi.signIn(authResult).then(function(response) {
-            //    $scope.signedIn(response.data);
-            //});
+            ZeikonaApi.signIn(authResult, function(response) {
+                $scope.signedIn(response);
+                $scope.$apply();
+            });
         } else if (authResult['error']) {
             if (authResult['error'] == 'immediate_failed') {
                 $scope.immediateFailed = true;

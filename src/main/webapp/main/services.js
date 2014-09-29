@@ -9,24 +9,17 @@ angular.module('zeikona.services', [])
             return rootUrl;
         };
         return {
-            'clientId': '13487503673-fl85v9f6eket7u0u6r5pq42qnkkbmfc0.apps.googleusercontent.com',
-            'apiBase': '/api/',
-            'rootUrl': getRootUrl(),
+            'clientId': '13487503673-mgiqme47e1uf23upgnqo29u1tif49up1.apps.googleusercontent.com',
             'scopes': 'https://www.googleapis.com/auth/plus.login ',
             'requestvisibleactions': 'http://schemas.google.com/AddActivity ' +
                 'http://schemas.google.com/ReviewActivity',
             'cookiepolicy': 'single_host_origin',
-            // If you have an android application and you want to enable
-            // Over-The-Air install, remove the comment below and use the package
-            // name associated to the project's Client Id for installed applications
-            // in the Google API Console.
-            //'apppackagename': 'YOUR_APP_PACKAGE'
         };
     })
     .factory('ZeikonaApi', function($http, Conf) {
         return {
-            signIn: function(authResult) {
-                return $http.post(Conf.apiBase + 'connect', authResult);
+            signIn: function(authResult, cb) {
+                gapi.client.helloApi.say(authResult).execute(cb);
             },
             disconnect: function() {
                 return $http.post(Conf.apiBase + 'disconnect');
