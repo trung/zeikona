@@ -31,6 +31,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="AppEngine Dev 1.9.10" level="application_server_libraries" />
     <orderEntry type="library" name="AppEngine API" level="project" />
+    <orderEntry type="library" name="com.google.apis:google-api-services-plus:v1-rev122-1.18.0-rc" level="project" />
+    <orderEntry type="library" name="com.google.http-client:google-http-client-jackson:1.19.0" level="project" />
   </component>
 </module>
 

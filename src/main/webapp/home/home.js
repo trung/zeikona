@@ -4,12 +4,11 @@ angular.module('zeikona.home', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {
-    templateUrl: 'home/home.html',
-    controller: 'ZHomeCtrl'
+    templateUrl: 'home/home.html'
   });
 }])
 
-.controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', function($scope, Conf, ZeikonaApi) {
+.controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', '$log', function($scope, Conf, ZeikonaApi, $log) {
 
     $scope.userProfile = {'name':''};
     $scope.hasUserProfile = false;
@@ -44,7 +43,7 @@ angular.module('zeikona.home', ['ngRoute'])
             if (authResult['error'] == 'immediate_failed') {
                 $scope.immediateFailed = true;
             } else {
-                console.log('Error:' + authResult['error']);
+                $log.error('Error: ' + authResult['error']);
             }
         }
     }
@@ -62,6 +61,7 @@ angular.module('zeikona.home', ['ngRoute'])
         });
     }
 
+    $log.info("HomeCtrl initialization");
     $scope.renderSignIn();
 
 }]);

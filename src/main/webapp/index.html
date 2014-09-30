@@ -35,7 +35,10 @@
                 <span class="navbar-btn navbar-right" style="margin-bottom: 0px" id="signin" ng-show="immediateFailed">
                   <span id="myGsignin"></span>
                 </span>
-                <p class="navbar-text navbar-right" ng-show="isSignedIn">{{userProfile.name}}</p>
+                <span class="navbar-right" ng-show="isSignedIn">
+                    <p class="navbar-text">{{userProfile.displayName}}</p>
+                    <img  ng-src="{{userProfile.publicProfilePhotoUrl}}"/>
+                </span>
             </div><!--/.nav-collapse -->
         </div>
     </div>
@@ -67,19 +70,21 @@
   <script src="components/version/interpolate-filter.js"></script>
   <script type="text/javascript">
       function startApp() {
+          console.log("Google+ APIs are loaded. Load ng-app");
           angular.bootstrap(document, ['zeikona']);
       }
       function init() {
-          zeikona.appengine.init('//' + window.location.host + '/_ah/api');
-
-          window.___gcfg = {
-              parsetags: 'explicit'
-          };
-          (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/auth:plusone.js?onload=startApp';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
+          console.log("Init appengine client JS and google plus API");
+          zeikona.appengine.init('//' + window.location.host + '/_ah/api', function() {
+              window.___gcfg = {
+                  parsetags: 'explicit'
+              };
+              (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/auth:plusone.js?onload=startApp';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+          });
       }
   </script>
   <script src="https://apis.google.com/js/client.js?onload=init"></script>

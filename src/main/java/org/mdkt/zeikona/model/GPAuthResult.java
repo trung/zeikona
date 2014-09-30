@@ -7,8 +7,10 @@ package org.mdkt.zeikona.model;
 public class GPAuthResult {
     private String id_token;
     private String access_token;
-    private int expires_in;
+    private long expires_in;
+    private long expires_at;
     private String error;
+    private String code;
 
     public String getId_token() {
         return id_token;
@@ -26,19 +28,35 @@ public class GPAuthResult {
         this.access_token = access_token;
     }
 
-    public int getExpires_in() {
-        return expires_in;
-    }
-
-    public void setExpires_in(int expires_in) {
-        this.expires_in = expires_in;
-    }
-
     public String getError() {
         return error;
     }
 
     public void setError(String error) {
         this.error = error;
+    }
+
+    public long getExpires_in() {
+        return expires_in;
+    }
+
+    public void setExpires_in(long expires_in) {
+        this.expires_in = expires_in;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public Long getExpires_at() {
+        return expires_at;
+    }
+
+    public void setExpires_at(long expires_at) {
+        this.expires_at = expires_at;
     }
 }

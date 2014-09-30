@@ -9,6 +9,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="AppEngine API" />
+          <element id="library" level="project" name="com.google.apis:google-api-services-plus:v1-rev122-1.18.0-rc" />
+          <element id="library" level="project" name="com.google.http-client:google-http-client-jackson:1.19.0" />
         </element>
       </element>
     </root>
