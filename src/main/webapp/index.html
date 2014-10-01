@@ -24,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">{Z}eikona</a>
+                <a class="navbar-brand" href="#">Z|eikona</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -70,12 +70,19 @@
   <script src="components/version/interpolate-filter.js"></script>
   <script type="text/javascript">
       function startApp() {
-          console.log("Google+ APIs are loaded. Load ng-app");
-          angular.bootstrap(document, ['zeikona']);
+          var $injector = angular.bootstrap(document, ['zeikona']);
+          if (console.info) {
+              console.info("Google+ APIs are loaded. Load ng-app");
+          }
       }
       function init() {
-          console.log("Init appengine client JS and google plus API");
+          if (console.info) {
+              console.info("Init appengine client JS and google plus API");
+          }
           zeikona.appengine.init('//' + window.location.host + '/_ah/api', function() {
+              if (console.info) {
+                  console.info("All Cloud Endpoints are loaded");
+              }
               window.___gcfg = {
                   parsetags: 'explicit'
               };

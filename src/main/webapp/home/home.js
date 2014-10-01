@@ -25,6 +25,15 @@ angular.module('zeikona.home', ['ngRoute'])
         $scope.isSignedIn = true;
         $scope.userProfile = profile;
         $scope.hasUserProfile = true;
+        $scope.$apply(function () {
+            $scope.loadAllPhotos();
+        });
+    };
+
+    $scope.loadAllPhotos = function() {
+        ZeikonaApi.getAllPhotos(function(response) {
+           $log.info(response);
+        });
     };
 
     $scope.processAuth = function(authResult) {

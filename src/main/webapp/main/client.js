@@ -6,12 +6,11 @@ zeikona.appengine.init = function(apiRoot, onReady) {
   var apisToLoad;
   var callback = function() {
       if (--apisToLoad == 0) {
-          // all apis are loaded
-          console.log("All Cloud Endpoints are loaded");
           onReady();
       }
   }
 
-  apisToLoad = 1;
-  gapi.client.load("helloApi", "v1", callback, apiRoot);
+  apisToLoad = 2;
+  gapi.client.load("initialization", "v1", callback, apiRoot);
+  gapi.client.load("photo", "v1", callback, apiRoot);
 };
