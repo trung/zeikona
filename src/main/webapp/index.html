@@ -32,12 +32,12 @@
                     <li><a href="#/view1">View1</a></li>
                     <li><a href="#/view2">View2</a></li>
                 </ul>
-                <span class="navbar-btn navbar-right" style="margin-bottom: 0px" id="signin" ng-show="immediateFailed">
+                <span class="navbar-btn navbar-right" style="margin-bottom: 0px" id="signin" ng-show="!isSignedIn">
                   <span id="myGsignin"></span>
                 </span>
                 <span class="navbar-right gprofile" ng-show="isSignedIn">
                     <p class="navbar-text">{{userProfile.displayName}}</p>
-                    <img  ng-src="{{userProfile.publicProfilePhotoUrl}}"/>
+                    <img  ng-src="{{userProfile.image.url}}"/>
                 </span>
             </div><!--/.nav-collapse -->
         </div>
@@ -70,15 +70,16 @@
   <script src="components/version/interpolate-filter.js"></script>
   <script type="text/javascript">
       function startApp() {
-          var $injector = angular.bootstrap(document, ['zeikona']);
           if (console.info) {
               console.info("Google+ APIs are loaded. Load ng-app");
           }
+          var $injector = angular.bootstrap(document, ['zeikona']);
       }
       function init() {
           if (console.info) {
               console.info("Init appengine client JS and google plus API");
           }
+          gapi.client.setApiKey("AIzaSyDgS9R55XjOZ_f9fU3LXPOGmsIQ_BuqMYA");
           zeikona.appengine.init('//' + window.location.host + '/_ah/api', function() {
               if (console.info) {
                   console.info("All Cloud Endpoints are loaded");

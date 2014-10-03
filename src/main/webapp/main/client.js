@@ -11,6 +11,6 @@ zeikona.appengine.init = function(apiRoot, onReady) {
   }
 
   apisToLoad = 2;
-  gapi.client.load("initialization", "v1", callback, apiRoot);
-  gapi.client.load("photo", "v1", callback, apiRoot);
+  gapi.client.load("zeikona", "v1", callback, apiRoot);
+  gapi.client.load("plus", "v1", callback);
 };

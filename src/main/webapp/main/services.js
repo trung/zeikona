@@ -1,9 +1,15 @@
 'use strict';
 
 angular.module('zeikona.services', [])
-    .factory('Conf', function() {
+    .factory('Conf', function($location) {
+        function getRootUrl() {
+            var rootUrl = $location.protocol() + '://' + $location.host();
+            if ($location.port())
+                rootUrl += ':' + $location.port();
+            return rootUrl;
+        };
         return {
-            'clientId': '13487503673-mgiqme47e1uf23upgnqo29u1tif49up1.apps.googleusercontent.com',
+            'clientId': '13487503673-h0ejrqftar980f4vkk3o76q0l6mu69at.apps.googleusercontent.com',
             'scopes': 'https://www.googleapis.com/auth/plus.login ' + 'https://picasaweb.google.com/data/ ',
             'requestvisibleactions': 'http://schemas.google.com/AddActivity ' +
                 'http://schemas.google.com/ReviewActivity',
@@ -12,11 +18,8 @@ angular.module('zeikona.services', [])
     })
     .factory('ZeikonaApi', function($http, Conf) {
         return {
-            signIn: function(authResult, cb) {
-                gapi.client.initialization.connect(authResult).execute(cb);
-            },
             getAllPhotos: function(cb) {
-                gapi.client.photo.allPhotos().execute(cb);
+                gapi.client.zeikona.photo.allPhotos().execute(cb);
             }
         };
     })

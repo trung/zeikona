@@ -10,10 +10,9 @@ angular.module('zeikona.home', ['ngRoute'])
 
 .controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', '$log', function($scope, Conf, ZeikonaApi, $log) {
 
-    $scope.userProfile = {'name':''};
-    $scope.hasUserProfile = false;
+    $scope.userProfile = {};
     $scope.isSignedIn = false;
-    $scope.immediateFailed = false;
+    $scope.photos = [];
 
     $scope.signIn = function(authResult) {
         $scope.$apply(function() {
@@ -25,35 +24,35 @@ angular.module('zeikona.home', ['ngRoute'])
         $scope.isSignedIn = true;
         $scope.userProfile = profile;
         $scope.hasUserProfile = true;
-        $scope.$apply(function () {
-            $scope.loadAllPhotos();
-        });
+        $scope.loadAllPhotos();
     };
 
     $scope.loadAllPhotos = function() {
         ZeikonaApi.getAllPhotos(function(response) {
            $log.info(response);
+           $scope.photos = response.photos;
+           $scope.$apply();
         });
     };
 
     $scope.processAuth = function(authResult) {
-        $scope.immediateFailed = true;
-        if ($scope.isSignedIn) {
-            return 0;
-        }
-        if (authResult['access_token']) {
-            $scope.immediateFailed = false;
-            // Successfully authorized, create session
-            ZeikonaApi.signIn(authResult, function(response) {
-                $scope.signedIn(response);
-                $scope.$apply();
+        if (authResult && !authResult.error) {
+            // obtain user info
+            var request = gapi.client.plus.people.get({
+                'userId': 'me'
             });
-        } else if (authResult['error']) {
-            if (authResult['error'] == 'immediate_failed') {
-                $scope.immediateFailed = true;
-            } else {
-                $log.error('Error: ' + authResult['error']);
-            }
+            request.then(function(resp) {
+                var profile = resp.result;
+                $scope.signedIn(profile);
+                $scope.$apply();
+            }, function(reason) {
+                $log.error('Unable to get user profile: ' + reason.result.error.message);
+            });
+        } else if (authResult && authResult.error != 'immediate_failed') {
+            $log.error('Authentication failed: ' + authResult['error']);
+            $scope.isSignedIn = false;
+        } else {
+            $scope.isSignedIn = false;
         }
     }
 
@@ -66,7 +65,8 @@ angular.module('zeikona.home', ['ngRoute'])
             //'apppackagename': 'your.photohunt.android.package.name',
             'theme': 'dark',
             'cookiepolicy': Conf.cookiepolicy,
-            'accesstype': 'offline'
+            'accesstype': 'offline',
+            'immediate': true
         });
     }
 

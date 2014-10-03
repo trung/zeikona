@@ -1,2 +1,7 @@
-<h1>Welcome!</h1>
-<p>Please sign in to start the awesomeness</p>
+<span ng-show="!isSignedIn">
+    <h1>Welcome!</h1>
+    <p>Please sign in to start the awesomeness</p>
+</span>
+<div ng-repeat="photo in photos">
+    <img ng-src="{{photo.thumbnail}}" />
+</div>
