@@ -1,0 +1,776 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/'
+      xmlns:gphoto='http://schemas.google.com/photos/2007' xmlns:exif='http://schemas.google.com/photos/exif/2007'
+      xmlns:media='http://search.yahoo.com/mrss/' xmlns:georss='http://www.georss.org/georss'
+      xmlns:gml='http://www.opengis.net/gml'>
+    <id>https://picasaweb.google.com/data/feed/api/user/default/albumid/1000000450728934</id>
+    <updated>2014-06-08T06:34:32.192Z</updated>
+    <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#album'/>
+    <title type='text'>Auto Backup</title>
+    <subtitle type='text'/>
+    <rights type='text'>protected</rights>
+    <icon>https://lh5.googleusercontent.com/-kQzW9pHEHmU/U5KbCdj277E/AAAAAAAA6YM/3Iz-jCN7CYk/s160-c/20140607.jpg</icon>
+    <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+          href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/1000000450728934'/>
+    <link rel='alternate' type='text/html'
+          href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y'/>
+    <link rel='alternate' type='text/html'
+          href='https://picasaweb.google.com/100165521764650728934?alabel=small_instant_upload'/>
+    <link rel='self' type='application/atom+xml'
+          href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/1000000450728934?start-index=1&amp;max-results=10'/>
+    <link rel='next' type='application/atom+xml'
+          href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/1000000450728934?start-index=11&amp;max-results=10'/>
+    <author>
+        <name>Trung Nguyen</name>
+        <uri>https://picasaweb.google.com/100165521764650728934</uri>
+    </author>
+    <generator version='1.00' uri='http://picasaweb.google.com/'>Picasaweb</generator>
+    <openSearch:totalResults>100</openSearch:totalResults>
+    <openSearch:startIndex>1</openSearch:startIndex>
+    <openSearch:itemsPerPage>10</openSearch:itemsPerPage>
+    <gphoto:id>1000000450728934</gphoto:id>
+    <gphoto:name>InstantUpload</gphoto:name>
+    <gphoto:access>private</gphoto:access>
+    <gphoto:timestamp>1402114286000</gphoto:timestamp>
+    <gphoto:numphotos>14414</gphoto:numphotos>
+    <gphoto:user>100165521764650728934</gphoto:user>
+    <gphoto:nickname>Trung Nguyen</gphoto:nickname>
+    <gphoto:albumType>InstantUpload</gphoto:albumType>
+    <gphoto:allowPrints>true</gphoto:allowPrints>
+    <gphoto:allowDownloads>true</gphoto:allowDownloads>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054772233931810
+        </id>
+        <published>2014-06-07T05:28:08.000Z</published>
+        <updated>2014-06-07T05:32:23.071Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000084.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh6.googleusercontent.com/-Q-uU2xM3NAw/U5Ki6LzzDCI/AAAAAAAA6Tk/JlqylU9nsUs/1000084.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054772233931810?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054772233931810'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/qkkBT-1wtfJxVnJkFh-OF9MTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054772233931810?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054772233931810/3?tok=QUI1UGxRWmQ4cnJFS1VMbVNLUG5hN2pfOURGTlFCc1ZPQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054772233931810/3?tok=QUI1UGxRWTloa3lTR2U3d0tWQnR4QTgzbnFGeU8tVFBsQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054772233931810/3?tok=QUI1UGxRWTloa3lTR2U3d0tWQnR4QTgzbnFGeU8tVFBsQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054772233931810'/>
+        <gphoto:id>6022054772233931810</gphoto:id>
+        <gphoto:version>3</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>2248</gphoto:width>
+        <gphoto:height>4000</gphoto:height>
+        <gphoto:size>3798082</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402114286000</gphoto:timestamp>
+        <gphoto:imageVersion>59705</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_51aa2b51a5822061df09982e4d3095f0</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>4.8</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.008</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>20.4</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402143086000</exif:time>
+            <exif:imageUniqueID>48a88981e22b6a600000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh6.googleusercontent.com/-Q-uU2xM3NAw/U5Ki6LzzDCI/AAAAAAAA6Tk/JlqylU9nsUs/1000084.jpg'
+                    height='512' width='288' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-Q-uU2xM3NAw/U5Ki6LzzDCI/AAAAAAAA6Tk/JlqylU9nsUs/s72/1000084.jpg'
+                    height='72' width='41'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-Q-uU2xM3NAw/U5Ki6LzzDCI/AAAAAAAA6Tk/JlqylU9nsUs/s144/1000084.jpg'
+                    height='144' width='81'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-Q-uU2xM3NAw/U5Ki6LzzDCI/AAAAAAAA6Tk/JlqylU9nsUs/s288/1000084.jpg'
+                    height='288' width='162'/>
+            <media:title type='plain'>1000084.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054730074808082
+        </id>
+        <published>2014-06-07T05:27:58.000Z</published>
+        <updated>2014-06-08T06:33:16.865Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000082.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh6.googleusercontent.com/-D7mJfUoFg4U/U5Ki3uwR3xI/AAAAAAAA6YM/Oajcvx7w0Jw/1000082.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054730074808082?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054730074808082'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/uiiJuKw8usbEiYMMwfqCqtMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054730074808082?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054730074808082/4?tok=QUI1UGxRYnBZSnplMVJUN2duNFpucnBTckJ6WUJsTzQtZzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054730074808082/4?tok=QUI1UGxRYlQ5dUJqQXViU2NTc2lGS19mYmJab29KVWdLdzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054730074808082/4?tok=QUI1UGxRYlQ5dUJqQXViU2NTc2lGS19mYmJab29KVWdLdzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054730074808082'/>
+        <gphoto:id>6022054730074808082</gphoto:id>
+        <gphoto:version>4</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>3756384</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402114216000</gphoto:timestamp>
+        <gphoto:imageVersion>59779</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_6a7b8e5f97c15848c71035389fc1787d</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>5.6</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.008</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>32.3</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402143016000</exif:time>
+            <exif:imageUniqueID>c473e2fc663f2de60000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh6.googleusercontent.com/-D7mJfUoFg4U/U5Ki3uwR3xI/AAAAAAAA6YM/Oajcvx7w0Jw/1000082.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-D7mJfUoFg4U/U5Ki3uwR3xI/AAAAAAAA6YM/Oajcvx7w0Jw/s72/1000082.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-D7mJfUoFg4U/U5Ki3uwR3xI/AAAAAAAA6YM/Oajcvx7w0Jw/s144/1000082.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-D7mJfUoFg4U/U5Ki3uwR3xI/AAAAAAAA6YM/Oajcvx7w0Jw/s288/1000082.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000082.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054670384202082
+        </id>
+        <published>2014-06-07T05:27:45.000Z</published>
+        <updated>2014-06-08T06:32:55.995Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000078.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh3.googleusercontent.com/-j4FPoZJfbAE/U5Ki0QY7gWI/AAAAAAAA6YI/QYz-Pcbxsi0/1000078.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054670384202082?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054670384202082'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/J-3SUgXSEHHXwjR85BhMldMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054670384202082?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054670384202082/4?tok=QUI1UGxRWS1ZX1pQTGowZkpuQ1lhellQdWVsOTVFNjVYUToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054670384202082/4?tok=QUI1UGxRWldLR2xGM01TOV9zMUZ4Szc5WVpzaEJDdVV1UToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054670384202082/4?tok=QUI1UGxRWldLR2xGM01TOV9zMUZ4Szc5WVpzaEJDdVV1UToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054670384202082'/>
+        <gphoto:id>6022054670384202082</gphoto:id>
+        <gphoto:version>4</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>3755936</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402114132000</gphoto:timestamp>
+        <gphoto:imageVersion>59778</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_774cd384c4d279a26dc732b87f482cc1</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>5.6</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.00625</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>32.3</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402142932000</exif:time>
+            <exif:imageUniqueID>0acb4537628fac920000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh3.googleusercontent.com/-j4FPoZJfbAE/U5Ki0QY7gWI/AAAAAAAA6YI/QYz-Pcbxsi0/1000078.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh3.googleusercontent.com/-j4FPoZJfbAE/U5Ki0QY7gWI/AAAAAAAA6YI/QYz-Pcbxsi0/s72/1000078.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh3.googleusercontent.com/-j4FPoZJfbAE/U5Ki0QY7gWI/AAAAAAAA6YI/QYz-Pcbxsi0/s144/1000078.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh3.googleusercontent.com/-j4FPoZJfbAE/U5Ki0QY7gWI/AAAAAAAA6YI/QYz-Pcbxsi0/s288/1000078.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000078.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054600916790898
+        </id>
+        <published>2014-06-07T05:27:28.000Z</published>
+        <updated>2014-06-08T06:32:54.644Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000077.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh5.googleusercontent.com/--Rm7DLl7uZ4/U5KiwNmm7nI/AAAAAAAA6X8/x3sINIChAVY/1000077.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054600916790898?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054600916790898'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/mgUsHtTCp8UVeD8-p8foqNMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054600916790898?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054600916790898/4?tok=QUI1UGxRYUkzdmxEX2Y1aUhwRlVZakd2cVhheGtQeG02QToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054600916790898/4?tok=QUI1UGxRYUNzMnc3LURENFZHM0hiWGRvTGt5NlZrUThzUToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054600916790898/4?tok=QUI1UGxRYUNzMnc3LURENFZHM0hiWGRvTGt5NlZrUThzUToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054600916790898'/>
+        <gphoto:id>6022054600916790898</gphoto:id>
+        <gphoto:version>4</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>3990330</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402114121000</gphoto:timestamp>
+        <gphoto:imageVersion>59775</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_aac3d34bdf1671cc9897770d6b0a600a</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>5.6</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.002</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>32.3</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402142921000</exif:time>
+            <exif:imageUniqueID>a03de7ab327e703e0000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh5.googleusercontent.com/--Rm7DLl7uZ4/U5KiwNmm7nI/AAAAAAAA6X8/x3sINIChAVY/1000077.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/--Rm7DLl7uZ4/U5KiwNmm7nI/AAAAAAAA6X8/x3sINIChAVY/s72/1000077.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/--Rm7DLl7uZ4/U5KiwNmm7nI/AAAAAAAA6X8/x3sINIChAVY/s144/1000077.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/--Rm7DLl7uZ4/U5KiwNmm7nI/AAAAAAAA6X8/x3sINIChAVY/s288/1000077.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000077.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054538549429970
+        </id>
+        <published>2014-06-07T05:27:14.000Z</published>
+        <updated>2014-06-08T06:34:32.192Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000075.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh5.googleusercontent.com/-TVelGRlAQGc/U5KislREhtI/AAAAAAAA6YE/VB408APmnK8/1000075.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054538549429970?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054538549429970'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/ZmwLi40YuhWAPBecza5eANMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054538549429970?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054538549429970/5?tok=QUI1UGxRYmU1OGFzeVVaanBpU3JNb2YySnV4ZFBDOUphQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054538549429970/5?tok=QUI1UGxRWXQ5dm9BNnBKZkJQM1pxSF9LbEdIRk9lbnl0dzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054538549429970/5?tok=QUI1UGxRWXQ5dm9BNnBKZkJQM1pxSF9LbEdIRk9lbnl0dzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054538549429970'/>
+        <gphoto:id>6022054538549429970</gphoto:id>
+        <gphoto:version>5</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>4092544</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402114044000</gphoto:timestamp>
+        <gphoto:imageVersion>59777</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_a954919e0466d6c724672fc29233a28c</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>2.8</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.0015625</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>6.0</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402142844000</exif:time>
+            <exif:imageUniqueID>194f342d579be73c0000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh5.googleusercontent.com/-TVelGRlAQGc/U5KislREhtI/AAAAAAAA6YE/VB408APmnK8/1000075.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-TVelGRlAQGc/U5KislREhtI/AAAAAAAA6YE/VB408APmnK8/s72/1000075.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-TVelGRlAQGc/U5KislREhtI/AAAAAAAA6YE/VB408APmnK8/s144/1000075.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-TVelGRlAQGc/U5KislREhtI/AAAAAAAA6YE/VB408APmnK8/s288/1000075.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000075.jpg</media:title>
+        </media:group>
+        <georss:where>
+            <gml:Point>
+                <gml:pos>1.3126522 103.8158298</gml:pos>
+            </gml:Point>
+        </georss:where>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054474862558418
+        </id>
+        <published>2014-06-07T05:26:59.000Z</published>
+        <updated>2014-06-08T06:32:54.878Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000074.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh5.googleusercontent.com/-TMqov_2ylf0/U5Kio4A7_NI/AAAAAAAA6YA/K0cv24iuhNw/1000074.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054474862558418?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054474862558418'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/05cLfrwS-hwmUxDSxs84-tMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054474862558418?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054474862558418/5?tok=QUI1UGxRYUs1U2xMemc4Sl93SVRfQXI3NGxaTm9zZTVHUToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054474862558418/5?tok=QUI1UGxRWjVNTHNUVUlqb3ZsYnhnTFZCVk9pWEtrcnlWQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054474862558418/5?tok=QUI1UGxRWjVNTHNUVUlqb3ZsYnhnTFZCVk9pWEtrcnlWQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054474862558418'/>
+        <gphoto:id>6022054474862558418</gphoto:id>
+        <gphoto:version>5</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>3999680</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402114030000</gphoto:timestamp>
+        <gphoto:imageVersion>59776</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_a048b7e469ac6be04dddfc5dfa447fe7</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>5.9</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.008</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>42.8</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402142830000</exif:time>
+            <exif:imageUniqueID>b79a08b5543166b30000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh5.googleusercontent.com/-TMqov_2ylf0/U5Kio4A7_NI/AAAAAAAA6YA/K0cv24iuhNw/1000074.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-TMqov_2ylf0/U5Kio4A7_NI/AAAAAAAA6YA/K0cv24iuhNw/s72/1000074.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-TMqov_2ylf0/U5Kio4A7_NI/AAAAAAAA6YA/K0cv24iuhNw/s144/1000074.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-TMqov_2ylf0/U5Kio4A7_NI/AAAAAAAA6YA/K0cv24iuhNw/s288/1000074.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000074.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054420879592978
+        </id>
+        <published>2014-06-07T05:26:46.000Z</published>
+        <updated>2014-06-08T06:32:51.006Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000073.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh6.googleusercontent.com/-6PfapDgsvHg/U5Kilu6ZThI/AAAAAAAA6X0/oJemXxkd2yI/1000073.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054420879592978?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054420879592978'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/7AmAOi4SQ9ykk3H4LbP5sNMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054420879592978?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054420879592978/4?tok=QUI1UGxRYXdPbTZIbW5mYmd6TW84a2lCOGVPVXhDdGJxdzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054420879592978/4?tok=QUI1UGxRYjFoVHA4MVdhLWJ3Y0ZtV1FnUjVTNXdBOGVndzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054420879592978/4?tok=QUI1UGxRYjFoVHA4MVdhLWJ3Y0ZtV1FnUjVTNXdBOGVndzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054420879592978'/>
+        <gphoto:id>6022054420879592978</gphoto:id>
+        <gphoto:version>4</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>4111492</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402114009000</gphoto:timestamp>
+        <gphoto:imageVersion>59773</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_0ad28cc017f0baba9d7a5d3da505908a</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>5.9</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.008</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>42.8</exif:focallength>
+            <exif:iso>160</exif:iso>
+            <exif:time>1402142809000</exif:time>
+            <exif:imageUniqueID>13ce237fc4cdde990000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh6.googleusercontent.com/-6PfapDgsvHg/U5Kilu6ZThI/AAAAAAAA6X0/oJemXxkd2yI/1000073.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-6PfapDgsvHg/U5Kilu6ZThI/AAAAAAAA6X0/oJemXxkd2yI/s72/1000073.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-6PfapDgsvHg/U5Kilu6ZThI/AAAAAAAA6X0/oJemXxkd2yI/s144/1000073.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-6PfapDgsvHg/U5Kilu6ZThI/AAAAAAAA6X0/oJemXxkd2yI/s288/1000073.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000073.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022046097194758690
+        </id>
+        <published>2014-06-07T04:54:28.000Z</published>
+        <updated>2014-06-08T06:32:46.683Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000071.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh5.googleusercontent.com/-FxdWsbKLXCg/U5KbBOxSMiI/AAAAAAAA6Xs/XIftiPbjJU4/1000071.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022046097194758690?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022046097194758690'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/cKX6WCvBrCOOBNGcA8FiitMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022046097194758690?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022046097194758690/4?tok=QUI1UGxRWUhoVVNwZkhaU2hSSnIwanNjdFBaeDJNTExVQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022046097194758690/4?tok=QUI1UGxRYUhkX09hWW1qa0lucW1XV0RxOWxsaWxCSTRuZzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022046097194758690/4?tok=QUI1UGxRYUhkX09hWW1qa0lucW1XV0RxOWxsaWxCSTRuZzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022046097194758690'/>
+        <gphoto:id>6022046097194758690</gphoto:id>
+        <gphoto:version>4</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>3880826</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402113962000</gphoto:timestamp>
+        <gphoto:imageVersion>59771</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_eb65615a39fcd55df2d91a79eade734e</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>5.9</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.00625</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>42.8</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402142762000</exif:time>
+            <exif:imageUniqueID>8a443fa4d76368230000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh5.googleusercontent.com/-FxdWsbKLXCg/U5KbBOxSMiI/AAAAAAAA6Xs/XIftiPbjJU4/1000071.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-FxdWsbKLXCg/U5KbBOxSMiI/AAAAAAAA6Xs/XIftiPbjJU4/s72/1000071.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-FxdWsbKLXCg/U5KbBOxSMiI/AAAAAAAA6Xs/XIftiPbjJU4/s144/1000071.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-FxdWsbKLXCg/U5KbBOxSMiI/AAAAAAAA6Xs/XIftiPbjJU4/s288/1000071.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000071.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022055010173394706
+        </id>
+        <published>2014-06-07T05:29:04.000Z</published>
+        <updated>2014-06-08T06:32:46.683Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000070.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh6.googleusercontent.com/-o6AaO53UQCU/U5KjICM_HxI/AAAAAAAA6Xw/wl_AQ4Cda5g/1000070.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022055010173394706?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022055010173394706'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/Dnud9-n_9sG-l6o4BKne49MTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022055010173394706?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022055010173394706/4?tok=QUI1UGxRWkhhY3ItTVBHSTJjUEpDTWZzUFdFWkxZTy02ZzoxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022055010173394706/4?tok=QUI1UGxRYjFSeEMzdHZ0TC1BOEZwTFpFdnU5MjlqRkdwQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022055010173394706/4?tok=QUI1UGxRYjFSeEMzdHZ0TC1BOEZwTFpFdnU5MjlqRkdwQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022055010173394706'/>
+        <gphoto:id>6022055010173394706</gphoto:id>
+        <gphoto:version>4</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>3754744</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402113951000</gphoto:timestamp>
+        <gphoto:imageVersion>59772</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_6d9585bb623157ffb08aebc20107dddf</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>5.9</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.004</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>42.8</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402142751000</exif:time>
+            <exif:imageUniqueID>3e8775d7e0c9f3a50000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh6.googleusercontent.com/-o6AaO53UQCU/U5KjICM_HxI/AAAAAAAA6Xw/wl_AQ4Cda5g/1000070.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-o6AaO53UQCU/U5KjICM_HxI/AAAAAAAA6Xw/wl_AQ4Cda5g/s72/1000070.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-o6AaO53UQCU/U5KjICM_HxI/AAAAAAAA6Xw/wl_AQ4Cda5g/s144/1000070.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh6.googleusercontent.com/-o6AaO53UQCU/U5KjICM_HxI/AAAAAAAA6Xw/wl_AQ4Cda5g/s288/1000070.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000070.jpg</media:title>
+        </media:group>
+    </entry>
+    <entry>
+        <id>
+            https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054969519415906
+        </id>
+        <published>2014-06-07T05:28:54.000Z</published>
+        <updated>2014-06-08T06:32:46.683Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#photo'/>
+        <title type='text'>1000069.jpg</title>
+        <summary type='text'/>
+        <content type='image/jpeg'
+                 src='https://lh5.googleusercontent.com/-ooWg5DLrVog/U5KjFqwUomI/AAAAAAAA6Xo/6oFbIJ-_vvY/1000069.jpg'/>
+        <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/feed/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054969519415906?authkey=YNLoWS3L_7Y'/>
+        <link rel='alternate' type='text/html'
+              href='https://picasaweb.google.com/100165521764650728934/20140607?authkey=YNLoWS3L_7Y#6022054969519415906'/>
+        <link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+              href='https://picasaweb.google.com/lh/photo/XzJ-lHbbDv5WzYL8G4SSbdMTjNZETYmyPJy0liipFm0'/>
+        <link rel='self' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054969519415906?authkey=YNLoWS3L_7Y'/>
+        <link rel='edit' type='application/atom+xml'
+              href='https://picasaweb.google.com/data/entry/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054969519415906/4?tok=QUI1UGxRWjE2cDJzOC1GQlJ2VEpkZ0poRFltaVc2dVF4QToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='edit-media' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054969519415906/4?tok=QUI1UGxRWWo2QWk3Z2dmdWxNT1luazV6Q09LMjA1aWpQQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='media-edit' type='image/jpeg'
+              href='https://picasaweb.google.com/data/media/api/user/100165521764650728934/albumid/6022046118344847281/photoid/6022054969519415906/4?tok=QUI1UGxRWWo2QWk3Z2dmdWxNT1luazV6Q09LMjA1aWpQQToxNDEyMzQ0NzE3MzEy&amp;authkey=YNLoWS3L_7Y'/>
+        <link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+              href='https://picasaweb.google.com/lh/reportAbuse?uname=100165521764650728934&amp;aid=6022046118344847281&amp;iid=6022054969519415906'/>
+        <gphoto:id>6022054969519415906</gphoto:id>
+        <gphoto:version>4</gphoto:version>
+        <gphoto:albumid>1000000450728934</gphoto:albumid>
+        <gphoto:access>private</gphoto:access>
+        <gphoto:width>4000</gphoto:width>
+        <gphoto:height>2248</gphoto:height>
+        <gphoto:size>4042298</gphoto:size>
+        <gphoto:client/>
+        <gphoto:checksum/>
+        <gphoto:timestamp>1402113918000</gphoto:timestamp>
+        <gphoto:imageVersion>59770</gphoto:imageVersion>
+        <gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+        <gphoto:commentCount>0</gphoto:commentCount>
+        <gphoto:streamId>cs_01_aa1dd44d6db3631cfb8c34ca5dcd1436</gphoto:streamId>
+        <gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+        <gphoto:shapes faces='done'/>
+        <exif:tags>
+            <exif:fstop>4.7</exif:fstop>
+            <exif:make>LEICA</exif:make>
+            <exif:model>C (Typ 112)</exif:model>
+            <exif:exposure>0.0025</exif:exposure>
+            <exif:flash>false</exif:flash>
+            <exif:focallength>19.2</exif:focallength>
+            <exif:iso>80</exif:iso>
+            <exif:time>1402142718000</exif:time>
+            <exif:imageUniqueID>1779f7fdfc11079f0000000000000000</exif:imageUniqueID>
+        </exif:tags>
+        <media:group>
+            <media:content
+                    url='https://lh5.googleusercontent.com/-ooWg5DLrVog/U5KjFqwUomI/AAAAAAAA6Xo/6oFbIJ-_vvY/1000069.jpg'
+                    height='288' width='512' type='image/jpeg' medium='image'/>
+            <media:credit>Trung Nguyen</media:credit>
+            <media:description type='plain'/>
+            <media:keywords/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-ooWg5DLrVog/U5KjFqwUomI/AAAAAAAA6Xo/6oFbIJ-_vvY/s72/1000069.jpg'
+                    height='41' width='72'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-ooWg5DLrVog/U5KjFqwUomI/AAAAAAAA6Xo/6oFbIJ-_vvY/s144/1000069.jpg'
+                    height='81' width='144'/>
+            <media:thumbnail
+                    url='https://lh5.googleusercontent.com/-ooWg5DLrVog/U5KjFqwUomI/AAAAAAAA6Xo/6oFbIJ-_vvY/s288/1000069.jpg'
+                    height='162' width='288'/>
+            <media:title type='plain'>1000069.jpg</media:title>
+        </media:group>
+    </entry>
+</feed>

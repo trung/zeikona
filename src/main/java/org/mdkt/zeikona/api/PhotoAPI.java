@@ -48,10 +48,12 @@ public class PhotoAPI {
         try {
             PicasawebService myService = new PicasawebService("zeikona");
 
+            myService.setConnectTimeout(60000);
+            myService.setReadTimeout(60000);
             myService.setOAuth2Credentials(new Credential(BearerToken.authorizationHeaderAccessMethod()).setAccessToken(accessToken));
 
-            String albumUrl = "https://picasaweb.google.com/data/feed/api/user/default?kind=album";
-            logger.debug("Loading ablumns {}", albumUrl);
+            String albumUrl = "https://picasaweb.google.com/data/feed/api/user/default?kind=album&max-results=1&fields=entry(title,id,gphoto:*)";
+            logger.info("Loading ablumns {}", albumUrl);
             URL feedUrl = new URL(albumUrl);
 
             UserFeed myUserFeed = myService.getFeed(feedUrl, UserFeed.class);
@@ -60,7 +62,7 @@ public class PhotoAPI {
                 if ("Auto Backup".equals(myAlbum.getTitle().getPlainText())) {
                     logger.debug("Auto Backup albumn detected with id {}", myAlbum.getId());
                     // i just need the auto backup albumn
-                    String photoUrl = "https://picasaweb.google.com/data/feed/api/user/default/albumid/" + myAlbum.getGphotoId() + "?max-results=10";
+                    String photoUrl = "https://picasaweb.google.com/data/feed/api/user/default/albumid/" + myAlbum.getGphotoId() + "?max-results=20";
                     logger.info("Loading photos {}", photoUrl);
                     URL photoFeedsUrl = new URL(photoUrl);
                     AlbumFeed albumFeed = myService.getFeed(photoFeedsUrl, AlbumFeed.class);

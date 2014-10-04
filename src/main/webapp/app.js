@@ -8,7 +8,8 @@ angular.module('zeikona', [
   'zeikona.home',
   'zeikona.view1',
   'zeikona.view2',
-  'zeikona.version'
+  'zeikona.version',
+  'zeikona.grid.grid-directive'
 ], function ($locationProvider) {
     //$locationProvider.html5Mode(true);
 })
