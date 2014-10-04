@@ -24,18 +24,19 @@ angular.module('zeikona.home', ['ngRoute'])
     }
 
     $scope.loadMore = function() {
-        if (!$scope.offsetLoaded[$scope.nextOffset]) {
-            $scope.loadAllPhotos($scope.nextOffset, 100);
-        } else {
-            // hmmm
-        }
+        $log.info("load more");
+//        if (!$scope.offsetLoaded[$scope.nextOffset]) {
+//            $scope.loadAllPhotos($scope.nextOffset, 100);
+//        } else {
+//            // hmmm
+//        }
     }
 
     $scope.signedIn = function (profile) {
         $scope.isSignedIn = true;
         $scope.userProfile = profile;
         $scope.hasUserProfile = true;
-        $scope.loadMore();
+        $scope.loadAllPhotos($scope.nextOffset, 100);
     };
 
     $scope.loadAllPhotos = function(offset, limit) {
