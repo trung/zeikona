@@ -8,51 +8,14 @@ angular.module('zeikona.home', ['ngRoute'])
   });
 }])
 
-.controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', '$log', function($scope, Conf, ZeikonaApi, $log) {
+.controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', '$log', '$window', function($scope, Conf, ZeikonaApi, $log, $window) {
 
     $scope.userProfile = {};
     $scope.isSignedIn = false;
-    $scope.photos = [ {
-        "thumbnail" : "https://lh3.googleusercontent.com/-SS8mRdkQft8/Towx76LDoYI/AAAAAAAABhk/HhtTYRXBx-g/s288/IMAG0186.jpg",
-        "height" : 173,
-        "width" : 288
-    }, {
-        "thumbnail" : "https://lh4.googleusercontent.com/-NCZRXpmaqcc/TowxuN7XhQI/AAAAAAAABhg/CaQ6mTp0n2A/s288/IMAG0185.jpg",
-        "height" : 288,
-        "width" : 173
-    }, {
-        "thumbnail" : "https://lh3.googleusercontent.com/-MMBk7oISauQ/TowxoGLmUiI/AAAAAAAABhc/WSaXb8-BR0Y/s288/IMAG0184.jpg",
-        "height" : 173,
-        "width" : 288
-    }, {
-        "thumbnail" : "https://lh4.googleusercontent.com/-pqVb76zr8Dw/TowxiMeXGSI/AAAAAAAABhY/z5uN4xGokd4/s288/IMAG0183.jpg",
-        "height" : 173,
-        "width" : 288
-    }, {
-        "thumbnail" : "https://lh6.googleusercontent.com/-TNHR5zSM_CY/TowxXKqBO_I/AAAAAAAABhU/l3eNl1p42Fo/s288/IMAG0182.jpg",
-        "height" : 173,
-        "width" : 288
-    }, {
-        "thumbnail" : "https://lh5.googleusercontent.com/-ompADRam_JY/TowxRG-8aGI/AAAAAAAABhQ/xiMbZCWJY8U/s288/IMAG0181.jpg",
-        "height" : 173,
-        "width" : 288
-    }, {
-        "thumbnail" : "https://lh4.googleusercontent.com/-Jz9k6lB8nKE/TowxLOErZII/AAAAAAAABhM/V-GWOdN8PxI/s288/IMAG0180.jpg",
-        "height" : 173,
-        "width" : 288
-    }, {
-        "thumbnail" : "https://lh3.googleusercontent.com/-JF9oKQUWLZs/TohEJZ35gdI/AAAAAAAABgc/OKqmkYBT3dA/s288/IMAG0179.jpg",
-        "height" : 288,
-        "width" : 173
-    }, {
-        "thumbnail" : "https://lh3.googleusercontent.com/-4y9akr0PLzs/TohFcwj_ETI/AAAAAAAABgg/tqquClGmdsM/s288/IMAG0178.jpg",
-        "height" : 288,
-        "width" : 173
-    }, {
-        "thumbnail" : "https://lh6.googleusercontent.com/-ppKZntTTXLw/TohF2ezkqiI/AAAAAAAABgk/rSt9UMUcvZ4/s288/IMAG0177.jpg",
-        "height" : 173,
-        "width" : 288
-    } ];
+    $scope.photos = undefined;
+    $scope.albumId = "";
+    $scope.nextOffset = 1;
+    $scope.offsetLoaded = {};
 
     $scope.signIn = function(authResult) {
         $scope.$apply(function() {
@@ -60,21 +23,29 @@ angular.module('zeikona.home', ['ngRoute'])
         });
     }
 
+    $scope.loadMore = function() {
+        if (!$scope.offsetLoaded[$scope.nextOffset]) {
+            $scope.loadAllPhotos($scope.nextOffset, 100);
+        } else {
+            // hmmm
+        }
+    }
+
     $scope.signedIn = function (profile) {
         $scope.isSignedIn = true;
         $scope.userProfile = profile;
         $scope.hasUserProfile = true;
-        $scope.loadAllPhotos();
+        $scope.loadMore();
     };
 
-    $scope.loadAllPhotos = function() {
-        ZeikonaApi.getAllPhotos(function(response) {
+    $scope.loadAllPhotos = function(offset, limit) {
+        ZeikonaApi.getAllPhotos(offset, limit, $scope.albumId, function(response) {
            $log.info(response);
+           $scope.offsetLoaded = {};
+           $scope.offsetLoaded[offset] = true;
+           $scope.nextOffset = offset + limit;
+           $scope.albumId = response.albumId;
            $scope.photos = response.photos;
-//           $scope.photos.splice(0, $scope.photos);
-//           for (var i = 0; i < response.photos.length; i++) {
-//               $scope.photos.push(response.photos[i]);
-//           }
            $scope.$apply();
         });
     };

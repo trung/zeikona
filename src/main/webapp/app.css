@@ -1,7 +1,7 @@
 /* app css stylesheet */
 
 .header-placeholder {
-    height: 70px;
+    height: 65px;
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
@@ -16,9 +16,10 @@
 }
 
 div.imageContainer {
-    margin: 2px;
+    margin: 1px;
     -webkit-user-select: none;
     position: relative;
     float: left;
     padding: 0px;
+    cursor: pointer;
 }

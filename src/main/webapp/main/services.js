@@ -18,8 +18,8 @@ angular.module('zeikona.services', [])
     })
     .factory('ZeikonaApi', function($http, Conf) {
         return {
-            getAllPhotos: function(cb) {
-                gapi.client.zeikona.photo.allPhotos().execute(cb);
+            getAllPhotos: function(offset, limit, albumId, cb) {
+                gapi.client.zeikona.photo.allPhotos({'offset' : offset, 'limit' : limit, 'albumId' : albumId}).execute(cb);
             }
         };
     })

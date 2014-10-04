@@ -9,7 +9,8 @@ angular.module('zeikona', [
   'zeikona.view1',
   'zeikona.view2',
   'zeikona.version',
-  'zeikona.grid.grid-directive'
+  'zeikona.grid',
+  'infinite-scroll',
 ], function ($locationProvider) {
     //$locationProvider.html5Mode(true);
 })

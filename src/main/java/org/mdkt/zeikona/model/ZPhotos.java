@@ -8,7 +8,17 @@ import java.util.List;
  */
 public class ZPhotos {
 
+    private String albumId;
+
     private List<ZPhoto> photos = new ArrayList<ZPhoto>();
+
+    public String getAlbumId() {
+        return albumId;
+    }
+
+    public void setAlbumId(String albumId) {
+        this.albumId = albumId;
+    }
 
     public List<ZPhoto> getPhotos() {
         return photos;

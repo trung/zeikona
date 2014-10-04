@@ -14,12 +14,16 @@ import com.google.gdata.data.photos.AlbumFeed;
 import com.google.gdata.data.photos.GphotoEntry;
 import com.google.gdata.data.photos.PhotoEntry;
 import com.google.gdata.data.photos.UserFeed;
+import com.google.gdata.util.ServiceException;
 import org.mdkt.zeikona.model.ZPhoto;
 import org.mdkt.zeikona.model.ZPhotos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.annotation.Nullable;
+import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.net.URL;
 
 /**
@@ -37,7 +41,7 @@ public class PhotoAPI {
     private static final Logger logger = LoggerFactory.getLogger(PhotoAPI.class);
 
     @ApiMethod(name = "photo.allPhotos")
-    public ZPhotos allPhotos(User user, HttpServletRequest httpServletRequest) throws UnauthorizedException, OAuthRequestException {
+    public ZPhotos allPhotos(@Named("offset") int offset, @Named("limit") int limit, @Nullable @Named("albumId") String albumId, User user, HttpServletRequest httpServletRequest) throws UnauthorizedException, OAuthRequestException {
         if (user == null) {
             throw new UnauthorizedException("User has not authenticated");
         }
@@ -52,35 +56,50 @@ public class PhotoAPI {
             myService.setReadTimeout(60000);
             myService.setOAuth2Credentials(new Credential(BearerToken.authorizationHeaderAccessMethod()).setAccessToken(accessToken));
 
-            String albumUrl = "https://picasaweb.google.com/data/feed/api/user/default?kind=album&max-results=1&fields=entry(title,id,gphoto:*)";
-            logger.info("Loading ablumns {}", albumUrl);
-            URL feedUrl = new URL(albumUrl);
-
-            UserFeed myUserFeed = myService.getFeed(feedUrl, UserFeed.class);
-
-            for (GphotoEntry myAlbum : myUserFeed.getEntries()) {
-                if ("Auto Backup".equals(myAlbum.getTitle().getPlainText())) {
-                    logger.debug("Auto Backup albumn detected with id {}", myAlbum.getId());
-                    // i just need the auto backup albumn
-                    String photoUrl = "https://picasaweb.google.com/data/feed/api/user/default/albumid/" + myAlbum.getGphotoId() + "?max-results=20";
-                    logger.info("Loading photos {}", photoUrl);
-                    URL photoFeedsUrl = new URL(photoUrl);
-                    AlbumFeed albumFeed = myService.getFeed(photoFeedsUrl, AlbumFeed.class);
-                    for (GphotoEntry ge : albumFeed.getEntries()) {
-                        PhotoEntry pe = new PhotoEntry(ge);
-                        MediaThumbnail mt = pe.getMediaThumbnails().get(pe.getMediaThumbnails().size() - 1);
-                        ZPhoto zp = new ZPhoto(mt.getUrl());
-                        zp.setHeight(mt.getHeight());
-                        zp.setWidth(mt.getWidth());
-                        photos.add(zp);
-                    }
-                    break;
-                }
+            if (albumId == null || albumId.length() == 0) {
+                albumId = loadAlbum(myService, "Auto Backup");
             }
+            loadPhotos(myService, photos, albumId, offset, limit);
+        } catch (UnauthorizedException ue) {
+            throw ue;
         } catch (Exception e) {
             throw new RuntimeException("Unable to get photos", e);
         }
         return photos;
+    }
+
+    private String loadAlbum(PicasawebService myService, String albumTitle) throws UnauthorizedException, IOException, ServiceException {
+        String albumUrl = "https://picasaweb.google.com/data/feed/api/user/default?kind=album&max-results=1&fields=entry(title,id,gphoto:*)";
+        logger.info("Loading ablumns {}", albumUrl);
+        URL feedUrl = new URL(albumUrl);
+
+        UserFeed myUserFeed = myService.getFeed(feedUrl, UserFeed.class);
+
+        for (GphotoEntry myAlbum : myUserFeed.getEntries()) {
+            if (albumTitle.equals(myAlbum.getTitle().getPlainText())) {
+                logger.debug("Auto Backup albumn detected with id {}", myAlbum.getId());
+                // i just need the auto backup albumn
+                return myAlbum.getGphotoId();
+            }
+        }
+
+        throw new UnauthorizedException("Not allowed to get photos from Auto Backup album or album does not exist");
+    }
+
+    private void loadPhotos(PicasawebService myService, ZPhotos photos, String albumId, int offset, int limit) throws IOException, ServiceException {
+        String photoUrl = "https://picasaweb.google.com/data/feed/api/user/default/albumid/" + albumId + "?max-results=" + limit + "&start-index=" + offset;
+        photos.setAlbumId(albumId);
+        logger.info("Loading photos {}", photoUrl);
+        URL photoFeedsUrl = new URL(photoUrl);
+        AlbumFeed albumFeed = myService.getFeed(photoFeedsUrl, AlbumFeed.class);
+        for (GphotoEntry ge : albumFeed.getEntries()) {
+            PhotoEntry pe = new PhotoEntry(ge);
+            MediaThumbnail mt = pe.getMediaThumbnails().get(pe.getMediaThumbnails().size() - 1);
+            ZPhoto zp = new ZPhoto(mt.getUrl());
+            zp.setHeight(mt.getHeight());
+            zp.setWidth(mt.getWidth());
+            photos.add(zp);
+        }
     }
 
     private String getAccessToken(HttpServletRequest httpServletRequest) throws UnauthorizedException {

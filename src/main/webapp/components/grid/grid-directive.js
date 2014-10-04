@@ -1,8 +1,31 @@
 'use strict';
 
-angular.module('zeikona.grid.grid-directive', [])
+angular.module('zeikona.grid', [
+    'zeikona.grid.grid-directive'
+]);
 
-    .directive('zeikonaGrid', ['$window', '$log', function($window, $log) {
+angular.module('zeikona.grid.grid-directive', [])
+    .factory('zeikonaGridProvider', function() {
+        var minHeight = 120;
+        var minWidth = 120;
+        var margin = 2;
+        return {
+            setMinHeight : function(h) {
+                minHeight = h;
+            },
+            setMinWidth : function(w) {
+                minWidth = w;
+            },
+            setMargin : function(m) {
+                margin = m;
+            },
+            minHeight : minHeight,
+            minWidth: minWidth,
+            margin: margin
+        }
+    })
+
+    .directive('zeikonaGrid', ['$window', '$log', 'zeikonaGridProvider', function($window, $log, zeikonaGridProvider) {
         var containerElm;
         var data = [];
 
@@ -44,8 +67,7 @@ angular.module('zeikona.grid.grid-directive', [])
         function createDataRow(maxwidth, items  ) {
             var row = [], len = 0;
 
-            // each image a has a 3px margin, i.e. it takes 6px additional space
-            var marginsOfImage = 4;
+            var marginsOfImage = zeikonaGridProvider.margin;
 
             // Build a row of images until longer than maxwidth
             while(items.length > 0 && len < maxwidth) {
@@ -72,12 +94,16 @@ angular.module('zeikona.grid.grid-directive', [])
 
                     // shrink the width of the image by pixelsToRemove
                     item.vwidth = item.width - pixelsToRemove;
+
+                    // center the image
+                    item.vy = Math.max(0, Math.floor(item.height - zeikonaGridProvider.minHeight) / 2);
                 }
             } else {
                 // all images fit in the row, set vx and vwidth
                 for(var i in row) {
                     item = row[i];
                     item.vx = 0;
+                    item.vy = Math.max(0, Math.floor(item.height - zeikonaGridProvider.minHeight) / 2);
                     item.vwidth = item.width;
                 }
             }
@@ -93,17 +119,17 @@ angular.module('zeikona.grid.grid-directive', [])
             var imageContainer = angular.element('<div class="imageContainer"/>');
 
             var overflow = angular.element("<div/>");
-            overflow.css("width", ""+$nz(item.vwidth, 120)+"px");
-            overflow.css("height", ""+ 120 +"px");
+            overflow.css("width", "" + $nz(item.vwidth, zeikonaGridProvider.minWidth) + "px");
+            overflow.css("height", "" + zeikonaGridProvider.minHeight +"px");
             overflow.css("overflow", "hidden");
 
             var img = angular.element("<img/>");
             img.attr("src", item.thumbnail);
             // img.attr("title", item.title);
-            img.css("width", "" + $nz(item.width, 120) + "px");
-            img.css("height", "" + $nz(item.height, 120) + "px");
+            img.css("width", "" + $nz(item.width, zeikonaGridProvider.minWidth) + "px");
+            img.css("height", "" + $nz(item.height, zeikonaGridProvider.minWidth) + "px");
             img.css("margin-left", "" + (item.vx ? (-item.vx) : 0) + "px");
-            img.css("margin-top", "" + 0 + "px");
+            img.css("margin-top", "" + (item.vy ? (-item.vy) : 0) + "px");
             // img.hide();
 
             overflow.append(img);
