@@ -16,10 +16,14 @@ angular.module('zeikona.services', [])
             'cookiepolicy': 'single_host_origin'
         };
     })
-    .factory('ZeikonaApi', function($http, Conf) {
+    .factory('ZeikonaApi', function($http, Conf, cfpLoadingBar) {
         return {
             getAllPhotos: function(offset, limit, albumId, cb) {
-                gapi.client.zeikona.photo.allPhotos({'offset' : offset, 'limit' : limit, 'albumId' : albumId}).execute(cb);
+                cfpLoadingBar.start();
+                gapi.client.zeikona.photo.allPhotos({'offset' : offset, 'limit' : limit, 'albumId' : albumId}).execute(function(response){
+                    cfpLoadingBar.complete();
+                    cb(response);
+                });
             }
         };
     })

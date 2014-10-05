@@ -10,11 +10,14 @@ angular.module('zeikona', [
   'zeikona.view2',
   'zeikona.version',
   'zeikona.grid',
-  //'infinite-scroll',
+  'cfp.loadingBar',
 ], function ($locationProvider) {
     //$locationProvider.html5Mode(true);
 })
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/home'});
+    $routeProvider.otherwise({redirectTo: '/home'});
+}])
+.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
 }]);

@@ -8,7 +8,7 @@ angular.module('zeikona.home', ['ngRoute'])
   });
 }])
 
-.controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', '$log', '$window', function($scope, Conf, ZeikonaApi, $log, $window) {
+.controller('ZHomeCtrl', ['$scope', 'Conf', 'ZeikonaApi', '$log', '$window', '$rootScope', function($scope, Conf, ZeikonaApi, $log, $window, $rootScope) {
 
     $scope.userProfile = {};
     $scope.isSignedIn = false;
