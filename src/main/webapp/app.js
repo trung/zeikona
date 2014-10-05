@@ -10,7 +10,7 @@ angular.module('zeikona', [
   'zeikona.view2',
   'zeikona.version',
   'zeikona.grid',
-  'infinite-scroll',
+  //'infinite-scroll',
 ], function ($locationProvider) {
     //$locationProvider.html5Mode(true);
 })

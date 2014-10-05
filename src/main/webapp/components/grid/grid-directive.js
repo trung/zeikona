@@ -24,10 +24,33 @@ angular.module('zeikona.grid.grid-directive', [])
             margin: margin
         }
     })
-
-    .directive('zeikonaGrid', ['$window', '$log', 'zeikonaGridProvider', function($window, $log, zeikonaGridProvider) {
+    .directive('zeikonaGrid', ['$window', '$log', 'zeikonaGridProvider', '$rootScope', function($window, $log, zeikonaGridProvider, $rootScope) {
         var containerElm;
-        var data = [];
+        var data = []; // current set of data
+        var lastRow = []; // contains the data element of the last row
+
+        var getHeight = function(elem) {
+            elem = elem[0] || elem;
+            if (isNaN(elem.offsetHeight)) {
+                return getHeight(elem.document.documentElement);
+            } else {
+                return elem.offsetHeight;
+            }
+        };
+        var getOffsetTop = function(elem) {
+            if (!elem[0].getBoundingClientRect || elem.css('none')) {
+                return;
+            }
+            return elem[0].getBoundingClientRect().top + getPageYOffset(elem);
+        };
+        var getPageYOffset = function(elem) {
+            elem = elem[0] || elem;
+            if (isNaN(window.pageYOffset)) {
+                return elem.document.documentElement.scrollTop;
+            } else {
+                return elem.ownerDocument.defaultView.pageYOffset;
+            }
+        };
 
         var $nz = function(value, defaultvalue) {
             if( typeof (value) === undefined || value == null) {
@@ -112,7 +135,14 @@ angular.module('zeikona.grid.grid-directive', [])
         }
 
         function updateDataElement(item) {
+            var overflow = item.el.find("div:first");
+            var img = overflow.find("img:first");
 
+            overflow.css("width", "" + $nz(item.vwidth, zeikonaGridProvider.minWidth) + "px");
+            overflow.css("height", "" + zeikonaGridProvider.minHeight +"px");
+
+            img.css("margin-left", "" + (item.vx ? (-item.vx) : 0) + "px");
+            img.css("margin-top", "" + (item.vy ? (-item.vy) : 0) + "px");
         }
 
         function createDataElement(item) {
@@ -141,12 +171,20 @@ angular.module('zeikona.grid.grid-directive', [])
         }
 
         function showPhotos() {
-            var containerWidth = containerElm[0].offsetWidth - 1;
-            var cloneData = data.slice();
+            var containerWidth = $(containerElm).width() - 1;
+            if (containerWidth == 0) {
+                $log.error("Container width is 0");
+                return;
+            }
+            var cloneData = lastRow.concat(data.slice());
 
             var rows = [];
             while (cloneData.length > 0) {
                 rows.push(createDataRow(containerWidth, cloneData));
+            }
+
+            if (rows.length > 0) {
+                lastRow = rows[rows.length - 1];
             }
 
             for(var r in rows) {
@@ -163,6 +201,7 @@ angular.module('zeikona.grid.grid-directive', [])
 
         function link(scope, element, attrs) {
             containerElm = element;
+            var raw = element[0];
 
             scope.$watchCollection('dataprovider', function(updatedData){
                 if (updatedData != undefined) {
@@ -171,17 +210,34 @@ angular.module('zeikona.grid.grid-directive', [])
                 }
             });
 
-            angular.element($window).bind('resize', function() {
-                //showPhotos();
+            angular.element($window).bind('scroll', function(){
+                var containerBottom, elementBottom, remaining, shouldScroll;
+                var container = angular.element($window);
+                containerBottom = $(container).scrollTop() + $(container).height();
+                elementBottom = getOffsetTop(element) + getHeight(element);
+                remaining = elementBottom - containerBottom;
+                shouldScroll = remaining <= 0.2 * $(container).height(); // 30% container height then load
+                if (shouldScroll) {
+//                    $log.debug("Should scroll as remaining is " + remaining);
+                    if (scope.$$phase || $rootScope.$$phase) {
+                        return scope.infiniteScroll();
+                    } else {
+                        return scope.$apply(scope.infiniteScroll);
+                    }
+                }
             });
+
+//            angular.element($window).bind('resize', showPhotos);
         }
 
         return {
             restrict: 'EA',
             scope : {
-                dataprovider : '='
+                dataprovider : '=',
+                infiniteScroll : '&'
             },
             link: link,
             templateUrl: 'components/grid/grid-template.html'
         };
     }]);
+

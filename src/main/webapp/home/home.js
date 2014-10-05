@@ -15,7 +15,7 @@ angular.module('zeikona.home', ['ngRoute'])
     $scope.photos = undefined;
     $scope.albumId = "";
     $scope.nextOffset = 1;
-    $scope.offsetLoaded = {};
+    $scope.offsetLoading = {};
 
     $scope.signIn = function(authResult) {
         $scope.$apply(function() {
@@ -24,12 +24,12 @@ angular.module('zeikona.home', ['ngRoute'])
     }
 
     $scope.loadMore = function() {
-        $log.info("load more");
-//        if (!$scope.offsetLoaded[$scope.nextOffset]) {
-//            $scope.loadAllPhotos($scope.nextOffset, 100);
-//        } else {
-//            // hmmm
-//        }
+        if (!$scope.offsetLoading[$scope.nextOffset]) {
+            $log.info("load more, start from " + $scope.nextOffset);
+            $scope.loadAllPhotos($scope.nextOffset, 100);
+        } else {
+            // hmmm
+        }
     }
 
     $scope.signedIn = function (profile) {
@@ -40,10 +40,10 @@ angular.module('zeikona.home', ['ngRoute'])
     };
 
     $scope.loadAllPhotos = function(offset, limit) {
+        $scope.offsetLoading[offset] = true;
         ZeikonaApi.getAllPhotos(offset, limit, $scope.albumId, function(response) {
            $log.info(response);
-           $scope.offsetLoaded = {};
-           $scope.offsetLoaded[offset] = true;
+           $scope.offsetLoading = {};
            $scope.nextOffset = offset + limit;
            $scope.albumId = response.albumId;
            $scope.photos = response.photos;
