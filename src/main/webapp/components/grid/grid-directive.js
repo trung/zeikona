@@ -216,7 +216,7 @@ angular.module('zeikona.grid.grid-directive', [])
                 containerBottom = $(container).scrollTop() + $(container).height();
                 elementBottom = getOffsetTop(element) + getHeight(element);
                 remaining = elementBottom - containerBottom;
-                shouldScroll = remaining <= 0.2 * $(container).height(); // 30% container height then load
+                shouldScroll = remaining <= 0.2 * $(container).height(); // 20% container height then load
                 if (shouldScroll) {
 //                    $log.debug("Should scroll as remaining is " + remaining);
                     if (scope.$$phase || $rootScope.$$phase) {

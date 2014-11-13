@@ -3,7 +3,7 @@ package org.mdkt.zeikona.model;
 /**
  * Created by trung on 29/9/14.
  */
-public class ZUser {
+public class ZUserDTO {
     private String userId;
     private String displayName;
     private String publicProfileUrl;
