@@ -10,6 +10,9 @@ public class ZPhotos {
 
     private String albumId;
 
+    private long total;
+    private long processedCount;
+
     private List<ZPhoto> photos = new ArrayList<ZPhoto>();
 
     public String getAlbumId() {
@@ -30,5 +33,21 @@ public class ZPhotos {
 
     public void add(ZPhoto zPhoto) {
         photos.add(zPhoto);
+    }
+
+    public long getTotal() {
+        return total;
+    }
+
+    public void setTotal(long total) {
+        this.total = total;
+    }
+
+    public long getProcessedCount() {
+        return processedCount;
+    }
+
+    public void setProcessedCount(long processedCount) {
+        this.processedCount = processedCount;
     }
 }

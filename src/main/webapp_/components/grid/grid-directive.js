@@ -152,6 +152,11 @@ angular.module('zeikona.grid.grid-directive', [])
             overflow.css("width", "" + $nz(item.vwidth, zeikonaGridProvider.minWidth) + "px");
             overflow.css("height", "" + zeikonaGridProvider.minHeight +"px");
             overflow.css("overflow", "hidden");
+            overflow.attr("data-toggle", "tooltip");
+            overflow.attr("data-placement", " bottom");
+            overflow.attr("data-html", true);
+            overflow.attr("title", "Id: " + item.id + "<br/> Name: " + item.name + "<br/>Timestamp: " + item.timestamp + "<br/>Published: " + item.publishedTimestamp);
+            overflow.tooltip();
 
             var img = angular.element("<img/>");
             img.attr("src", item.thumbnail);
@@ -207,26 +212,28 @@ angular.module('zeikona.grid.grid-directive', [])
                 if (updatedData != undefined) {
                     data = updatedData;
                     showPhotos();
+                } else {
+                    containerElm.empty();
                 }
             });
-
-            angular.element($window).bind('scroll', function(){
-                var containerBottom, elementBottom, remaining, shouldScroll;
-                var container = angular.element($window);
-                containerBottom = $(container).scrollTop() + $(container).height();
-                elementBottom = getOffsetTop(element) + getHeight(element);
-                remaining = elementBottom - containerBottom;
-                shouldScroll = remaining <= 0.2 * $(container).height(); // 20% container height then load
-                if (shouldScroll) {
-//                    $log.debug("Should scroll as remaining is " + remaining);
-                    if (scope.$$phase || $rootScope.$$phase) {
-                        return scope.infiniteScroll();
-                    } else {
-                        return scope.$apply(scope.infiniteScroll);
+            if (scope.infiniteScroll) {
+                angular.element($window).bind('scroll', function(){
+                    var containerBottom, elementBottom, remaining, shouldScroll;
+                    var container = angular.element($window);
+                    containerBottom = $(container).scrollTop() + $(container).height();
+                    elementBottom = getOffsetTop(element) + getHeight(element);
+                    remaining = elementBottom - containerBottom;
+                    shouldScroll = remaining <= 0.2 * $(container).height(); // 20% container height then load
+                    if (shouldScroll) {
+    //                    $log.debug("Should scroll as remaining is " + remaining);
+                        if (scope.$$phase || $rootScope.$$phase) {
+                            return scope.infiniteScroll();
+                        } else {
+                            return scope.$apply(scope.infiniteScroll);
+                        }
                     }
-                }
-            });
-
+                });
+            }
 //            angular.element($window).bind('resize', showPhotos);
         }
 
