@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.tomcat.util.security.MD5Encoder;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.mdkt.zeikona.api.Constants;
 import org.mdkt.zeikona.autoconfigure.ZeikonaProperties;
 import org.mdkt.zeikona.dao.ZAlbumDao;
@@ -101,7 +101,7 @@ public class ZeikonaApplication {
 				for (GphotoEntry<?> ge : albumFeed.getEntries()) {
 					PhotoEntry pe = new PhotoEntry(ge);
 					MediaThumbnail mt = pe.getMediaThumbnails().get(pe.getMediaThumbnails().size() - 1);
-					String hash = MD5Encoder.encode((pe.getSize() + pe.getTitle().getPlainText()).getBytes());
+					String hash = DigestUtils.md5Hex(pe.getSize() + pe.getTitle().getPlainText());
 					ZPhoto zp = new ZPhoto(mt.getUrl());
 					zp.setHeight(mt.getHeight());
 					zp.setWidth(mt.getWidth());
