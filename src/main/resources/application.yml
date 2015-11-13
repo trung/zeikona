@@ -6,7 +6,9 @@ zeikona:
     installed:
       client_id: 13487503673-gi2lgdd7h5a4gn87rs602ct7q83qthf3.apps.googleusercontent.com
       client_secret: RgkQF0KmXFFWJTFq10Y2CA6v
-      
+spring:
+  jpa:
+    show-sql: true
 logging:
   level:
     org.mdkt.zeikona: DEBUG
